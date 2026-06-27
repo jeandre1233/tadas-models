@@ -1,10 +1,15 @@
 {
-  "type": "micro_wake_word_model",
+  "type": "micro",
   "wake_word": "Edith",
-  "version": 1,
+  "author": "jeandre1233",
+  "version": 2,
+  "model": "https://raw.githubusercontent.com/jeandre1233/tadas-models/main/Edith.tflite",
+  "trained_languages": ["en"],
   "micro": {
-    "model": "https://raw.githubusercontent.com/jeandre1233/tadas-models/main/Edith.tflite",
     "probability_cutoff": 0.5,
-    "sliding_window_average_size": 10
+    "sliding_window_size": 5,
+    "feature_step_size": 10,
+    "tensor_arena_size": 30000,
+    "minimum_esphome_version": "2024.7"
   }
 }
