@@ -3,7 +3,7 @@
   "wake_word": "Edith",
   "author": "jeandre1233",
   "version": 2,
-  "model": "https://raw.githubusercontent.com/jeandre1233/tadas-models/main/Edith.tflite",
+  "model": "/config/esphome/Edith.tflite",
   "trained_languages": ["en"],
   "micro": {
     "probability_cutoff": 0.5,
